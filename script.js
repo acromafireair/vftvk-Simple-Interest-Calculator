@@ -10,13 +10,7 @@ function compute()
     // Calculate what year it will be after waiting the selected amount of time
     var futureYear = years + d.getFullYear();
     // If the user input a positive number, let them know how much interest they will gain
-    if (princpal > 0) {
-        document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>,<br/>at an interest rate of <mark>" + rate + "%</mark>.<br/>You will receive an amount of <mark>" + interest + "</mark>,<br/>in the year <mark>" + futureYear + "</mark><br/>";
-    } else { // If the user did not input a positive number, remind them to do so
-        alert("Enter a positive number");
-        // Return focus to the principal field
-        document.getElementByID("principal").focus();
-    }
+    document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>,<br/>at an interest rate of <mark>" + rate + "%</mark>.<br/>You will receive an amount of <mark>" + interest + "</mark>,<br/>in the year <mark>" + futureYear + "</mark><br/>";
 }
 
 // Displays what the rate slider is currently set to
